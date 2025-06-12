@@ -484,3 +484,21 @@ footer {
 }
 
 
+.skill-level {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.level-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #444;
+  transition: all 0.3s ease;
+}
+
+.level-dot.filled {
+  transform: scale(1.1);
+}

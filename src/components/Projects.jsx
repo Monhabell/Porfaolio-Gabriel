@@ -1,13 +1,26 @@
 import React, { useState } from "react";
+import ReactDOM from 'react-dom/client';
 import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt, FaNode } from "react-icons/fa";
-import { SiReact, SiLaravel, SiPython, SiPhp, SiJavascript, SiMongodb, SiMysql, SiCss3, SiExpress, SiNextdotjs, SiPostgresql  } from "react-icons/si";
+import { SiReact, SiAdobeaftereffects, SiLaravel, SiHtml5, SiTailwindcss,  SiUnity, SiPython, SiPhp, SiJavascript, SiMysql, SiCss3, SiExpress, SiNextdotjs, SiPostgresql  } from "react-icons/si";
 import "./Projects.css"; // Asegúrate de tener un archivo CSS para estilos
 import trakio from "../assets/trakio.png"; // Asegúrate de tener la imagen en la ruta correcta
 import Odin from "../assets/odin.png"; // Asegúrate de tener la imagen en la ruta correcta
 import Injector from "../assets/trakio injector.png"; // Asegúrate de tener la imagen en la ruta correcta
-import ecom from "../assets/ecom.png"; // Asegúrate de tener la imagen en la ruta correcta
+import ecom from "../assets/ecom.png"; 
+import Bot from "../assets/bot.png"; 
+import Juego1 from "../assets/juego1.png";
+import Juego2 from "../assets/juego2.png"; 
+import videoAff from "../assets/video after.png"; 
+
+
+
 const Projects = () => {
+
+  const irAlJuego = () => {
+    router.push('pages/juego'); // redirige a /juego
+  };
+
   const [projects] = useState([
     {
       id: 1,
@@ -52,10 +65,41 @@ const Projects = () => {
       id: 5,
       title: "Bot predictivo de Trading",
       description: "Bot de trading que utiliza IA para predecir movimientos del mercado y ejecutar operaciones.",
-      technologies: ["Python", "Pandas", "Machine Learning"],
-      image: Injector,
-      github: "https://github.com/Monhabell/extencion_trakio-injector",
-      demo: "https://chromewebstore.google.com/detail/trakio-injector/abiclhkinaclbkjekobedelkgfbbnebg?hl=es-419",
+      technologies: ["Python", "Pandas", "Machine Learning", "Tkinter"],
+      image: Bot,
+      github: "https://github.com/Monhabell/bot-predicion-iqOption-final",
+      // demo: "",
+      featured: false
+    },
+    {
+      id: 6,
+      title: "Juego Unity (en desarrollo)",
+      description: "Creacion de juego con personaje interacciones con el medio y fisicas",
+      technologies: ["Unity"],
+      image: Juego1,
+      // github: "",
+      // demo: "",
+      featured: false
+    },
+    {
+      id: 7,
+      title: "Juego Js",
+      description: "Creacion de juego con personaje interacciones con el medio y fisicas",
+      technologies: ["JavaScript", "CSS", "Html"],
+      image: Juego2,
+      github: "https://github.com/Monhabell/Game",
+      demo: "https://monhabell.github.io/Game/",
+      featured: false
+    }
+    ,
+    {
+      id: 8,
+      title: "Video Aff",
+      description: "Creacion de juego con personaje interacciones con el medio y fisicas",
+      technologies: ["After effects"],
+      image: videoAff,
+      github: "https://github.com/Monhabell/Game",
+      demo: "https://www.facebook.com/share/v/18sNebUJN7/?mibextid=oFDknk",
       featured: false
     }
   ]);
@@ -74,7 +118,14 @@ const Projects = () => {
     "MySQL": <SiMysql className="icon" />,
     "CSS": <SiCss3 className="icon" />,
     "Pandas": <SiPython className="icon" />,
-    "Next.js": <SiNextdotjs className="icon" />
+    "Tkinter": <SiPython className="icon" />,
+    "Next.js": <SiNextdotjs className="icon" />,
+    "Unity": <SiUnity className="icon" />,
+    "Tailwind CSS": <SiTailwindcss className="icon" />,
+    "Html": <SiHtml5 className="icon" />,
+    "After effects": <SiAdobeaftereffects className="icon" />
+
+
 
   };
 
@@ -131,6 +182,14 @@ const Projects = () => {
             onClick={() => setFilter("python")}
           >
             Python
+          </motion.button>
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className={filter === "unity" ? "active" : ""}
+            onClick={() => setFilter("unity")}
+          >
+            Unity
           </motion.button>
         </div>
 

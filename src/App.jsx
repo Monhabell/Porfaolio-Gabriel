@@ -1,26 +1,39 @@
 import "./App.css";
 import { motion } from "framer-motion";
 import { FaHtml5, FaPhp, FaLaravel, FaReact, FaPython, FaDatabase, FaGithub, FaCss3Alt, FaJs, FaNodeJs, FaTwitter, FaLinkedin, FaFileDownload } from "react-icons/fa";
-import { SiMongodb, SiExpress, SiTailwindcss } from "react-icons/si";
+import { SiMongodb, SiBootstrap, SiBlender, SiAdobeaftereffects ,SiSketchup, SiRhinoceros,  SiAdobephotoshop, SiNextdotjs, SiTailwindcss, SiPostgresql, SiUnity, SiCoreldraw, SiAdobeillustrator} from "react-icons/si";
 
 import profilePic from "./assets/foto.png";
 import Projects from "./components/Projects";
 
 function App() {
   const skills = [
-    { icon: <FaHtml5 />, name: "HTML5", color: "#E44D26" },
-    { icon: <FaCss3Alt />, name: "CSS3", color: "#1572B6" },
-    { icon: <FaJs />, name: "JavaScript", color: "#F7DF1E" },
-    { icon: <FaReact />, name: "React", color: "#61DAFB" },
-    { icon: <FaNodeJs />, name: "Node.js", color: "#68A063" },
-    { icon: <SiMongodb />, name: "MongoDB", color: "#47A248" },
-    { icon: <FaPhp />, name: "PHP", color: "#777BB4" },
-    { icon: <FaLaravel />, name: "Laravel 11", color: "#FF2D20" },
-    { icon: <FaPython />, name: "Python", color: "#3776AB" },
-    { icon: <FaDatabase />, name: "MySQL", color: "#4479A1" },
-    { icon: <SiTailwindcss />, name: "Tailwind", color: "#38B2AC" },
-    { icon: <FaGithub />, name: "GitHub", color: "#FFFFFF" },
+    { icon: <FaHtml5 />, name: "HTML5", color: "#E44D26", level: 5 },
+    { icon: <FaCss3Alt />, name: "CSS3", color: "#1572B6", level: 5 },
+    { icon: <FaJs />, name: "JavaScript", color: "#F7DF1E", level: 4 },
+    { icon: <SiNextdotjs />, name: "Next.js", color: "#FFFF", level: 3 },
+    { icon: <FaReact />, name: "React", color: "#61DAFB", level: 4 },
+    { icon: <FaNodeJs />, name: "Node.js", color: "#68A063", level: 3 },
+    { icon: <FaPhp />, name: "PHP", color: "#777BB4", level: 4 },
+    { icon: <FaLaravel />, name: "Laravel 11", color: "#FF2D20", level: 4 },
+    { icon: <FaPython />, name: "Python", color: "#3776AB", level: 3 },
+    { icon: <FaDatabase />, name: "MySQL", color: "#4479A1", level: 4 },
+    { icon: <SiPostgresql />, name: "Postgresql", color: "#FFFFFF", level: 3 },
+    { icon: <SiMongodb />, name: "MongoDB", color: "#47A248", level: 3 },
+    { icon: <SiBootstrap />, name: "Boostrap", color: "#631fe3", level: 4 },
+    { icon: <SiTailwindcss />, name: "Tailwind", color: "#38B2AC", level: 2 },
+    { icon: <SiUnity />, name: "Unity", color: "#adaeb0", level: 2 },
+    { icon: <FaGithub />, name: "GitHub", color: "#FFFFFF", level: 4 },
+    { icon: <SiCoreldraw />, name: "CorelDRAW", color: "#47A247", level: 5 },
+    { icon: <SiAdobeillustrator />, name: "Ilusrtrator", color: "#cd8001", level: 5 },
+    { icon: <SiAdobephotoshop />, name: "Photoshop", color: "#024ab3", level: 5 },
+    { icon: <SiAdobeaftereffects />, name: "Aftereffects", color: "#631fe3", level: 4 },
+    { icon: <SiSketchup />, name: "Sketchup", color: "#ff2d20", level: 4 },
+    { icon: <SiRhinoceros />, name: "Rhinoceros", color: "#fff", level: 3 },
+    { icon: <SiBlender />, name: "Blender", color: "#cd8001", level: 2 },
+
   ];
+
 
   return (
     <div className="dark-theme">
@@ -37,13 +50,25 @@ function App() {
           <motion.a whileHover={{ scale: 1.1 }} href="#about">Sobre Mí</motion.a>
           <motion.a whileHover={{ scale: 1.1 }} href="#contact">Contacto</motion.a>
         </nav>
+
         <motion.button
-          className="download-btn"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          <FaFileDownload /> Descargar CV
+            className="download-btn"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => {
+              // Crear un enlace temporal
+              const link = document.createElement('a');
+              // Ruta a tu archivo (ajusta esto según tu estructura de archivos)
+              link.href = ''; 
+              link.download = './assets/Desarrollador_Hv.pdf'; // Nombre del archivo al descargar
+              document.body.appendChild(link);
+              link.click();
+              document.body.removeChild(link);
+            }}
+          >
+            <FaFileDownload /> Descargar HV
         </motion.button>
+
       </motion.header>
 
       {/* HERO */}
@@ -80,7 +105,7 @@ function App() {
               transition={{ delay: 0.6, duration: 0.5 }}
               className="title"
             >
-              Desarrollador Full Stack & Diseñador
+              Desarrollador & Diseñador
             </motion.p>
             <motion.p
               className="hero-email"
@@ -97,15 +122,14 @@ function App() {
               animate={{ opacity: 1 }}
               transition={{ delay: 1, duration: 0.5 }}
             >
-              
               <motion.a
-                href="#"
+                href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQH7iXKc05C_-gAAAZdlNKtAJ5QMOuMqFAQDyyMn2_gFfKlEa6MigJcII4P1Fh5My2YEacZlJpDRu5fXEbMNtD2ZENQLdKJ0JrcY5ZsC4AkzQAZq4Db55kPYVwl3eet1O38cS8o=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fgabriel-monhabell-a4624536b%3Futm_source%3Dshare%26utm_campaign%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dandroid_app"
                 whileHover={{ y: -5, color: "#0A66C2" }}
               >
                 <FaLinkedin />
               </motion.a>
               <motion.a
-                href="#"
+                href="https://github.com/Monhabell"
                 whileHover={{ y: -5, color: "#6cc644" }}
               >
                 <FaGithub />
@@ -150,6 +174,15 @@ function App() {
                 {skill.icon}
               </div>
               <p>{skill.name}</p>
+              <div className="skill-level">
+                {[...Array(5)].map((_, i) => (
+                  <div 
+                    key={i}
+                    className={`level-dot ${i < skill.level ? 'filled' : ''}`}
+                    style={{ backgroundColor: i < skill.level ? skill.color : '#444' }}
+                  />
+                ))}
+              </div>
             </motion.div>
           ))}
         </div>
@@ -218,24 +251,20 @@ function App() {
             <p>📱 <strong>Teléfono:</strong> +57 320 237 1520</p>
 
             <div className="contact-social">
+
               <motion.a
-                href="#"
-                whileHover={{ scale: 1.1 }}
-                className="twitter"
-              >
-                <FaTwitter /> Twitter
-              </motion.a>
-              <motion.a
-                href="#"
+                href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQH7iXKc05C_-gAAAZdlNKtAJ5QMOuMqFAQDyyMn2_gFfKlEa6MigJcII4P1Fh5My2YEacZlJpDRu5fXEbMNtD2ZENQLdKJ0JrcY5ZsC4AkzQAZq4Db55kPYVwl3eet1O38cS8o=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fgabriel-monhabell-a4624536b%3Futm_source%3Dshare%26utm_campaign%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dandroid_app"
                 whileHover={{ scale: 1.1 }}
                 className="linkedin"
+                target="_black"
               >
                 <FaLinkedin /> LinkedIn
               </motion.a>
               <motion.a
-                href="#"
+                href="https://github.com/Monhabell"
                 whileHover={{ scale: 1.1 }}
                 className="github"
+                target="_black"
               >
                 <FaGithub /> GitHub
               </motion.a>
