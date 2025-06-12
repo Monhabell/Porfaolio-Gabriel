@@ -124,9 +124,6 @@ const Projects = () => {
     "Tailwind CSS": <SiTailwindcss className="icon" />,
     "Html": <SiHtml5 className="icon" />,
     "After effects": <SiAdobeaftereffects className="icon" />
-
-
-
   };
 
   const filteredProjects = filter === "all" 
