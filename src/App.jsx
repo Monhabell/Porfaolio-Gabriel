@@ -35,8 +35,6 @@ function App() {
     { icon: <SiBlender />, name: "Blender", color: "#cd8001", level: 5 },
 
   ];
-
-
   return (
     <div className="dark-theme">
       {/* HEADER */}
@@ -52,7 +50,6 @@ function App() {
           <motion.a whileHover={{ scale: 1.1 }} href="#about">Sobre Mí</motion.a>
           <motion.a whileHover={{ scale: 1.1 }} href="#contact">Contacto</motion.a>
         </nav>
-
         <motion.button
             className="download-btn"
             whileHover={{ scale: 1.05 }}
