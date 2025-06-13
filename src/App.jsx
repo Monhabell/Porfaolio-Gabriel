@@ -6,31 +6,33 @@ import { SiMongodb, SiBootstrap, SiBlender, SiAdobeaftereffects ,SiSketchup, SiR
 import profilePic from "./assets/foto.png";
 import Projects from "./components/Projects";
 
+
+
 function App() {
   const skills = [
     { icon: <FaHtml5 />, name: "HTML5", color: "#E44D26", level: 5 },
     { icon: <FaCss3Alt />, name: "CSS3", color: "#1572B6", level: 5 },
-    { icon: <FaJs />, name: "JavaScript", color: "#F7DF1E", level: 4 },
-    { icon: <SiNextdotjs />, name: "Next.js", color: "#FFFF", level: 3 },
-    { icon: <FaReact />, name: "React", color: "#61DAFB", level: 4 },
-    { icon: <FaNodeJs />, name: "Node.js", color: "#68A063", level: 3 },
-    { icon: <FaPhp />, name: "PHP", color: "#777BB4", level: 4 },
-    { icon: <FaLaravel />, name: "Laravel 11", color: "#FF2D20", level: 4 },
-    { icon: <FaPython />, name: "Python", color: "#3776AB", level: 3 },
-    { icon: <FaDatabase />, name: "MySQL", color: "#4479A1", level: 4 },
-    { icon: <SiPostgresql />, name: "Postgresql", color: "#FFFFFF", level: 3 },
-    { icon: <SiMongodb />, name: "MongoDB", color: "#47A248", level: 3 },
-    { icon: <SiBootstrap />, name: "Boostrap", color: "#631fe3", level: 4 },
-    { icon: <SiTailwindcss />, name: "Tailwind", color: "#38B2AC", level: 2 },
-    { icon: <SiUnity />, name: "Unity", color: "#adaeb0", level: 2 },
-    { icon: <FaGithub />, name: "GitHub", color: "#FFFFFF", level: 4 },
+    { icon: <FaJs />, name: "JavaScript", color: "#F7DF1E", level: 5 },
+    { icon: <SiNextdotjs />, name: "Next.js", color: "#FFFF", level: 5 },
+    { icon: <FaReact />, name: "React", color: "#61DAFB", level: 5 },
+    { icon: <FaNodeJs />, name: "Node.js", color: "#68A063", level: 5 },
+    { icon: <FaPhp />, name: "PHP", color: "#777BB4", level: 5 },
+    { icon: <FaLaravel />, name: "Laravel 11", color: "#FF2D20", level: 5 },
+    { icon: <FaPython />, name: "Python", color: "#3776AB", level: 5 },
+    { icon: <FaDatabase />, name: "MySQL", color: "#4479A1", level: 5 },
+    { icon: <SiPostgresql />, name: "Postgresql", color: "#FFFFFF", level: 5 },
+    { icon: <SiMongodb />, name: "MongoDB", color: "#47A248", level: 5 },
+    { icon: <SiBootstrap />, name: "Boostrap", color: "#631fe3", level: 5 },
+    { icon: <SiTailwindcss />, name: "Tailwind", color: "#38B2AC", level: 5 },
+    { icon: <SiUnity />, name: "Unity", color: "#adaeb0", level: 5 },
+    { icon: <FaGithub />, name: "GitHub", color: "#FFFFFF", level: 5 },
     { icon: <SiCoreldraw />, name: "CorelDRAW", color: "#47A247", level: 5 },
-    { icon: <SiAdobeillustrator />, name: "Ilusrtrator", color: "#cd8001", level: 5 },
+    { icon: <SiAdobeillustrator />, name: "Illustrator", color: "#cd8001", level: 5 },
     { icon: <SiAdobephotoshop />, name: "Photoshop", color: "#024ab3", level: 5 },
-    { icon: <SiAdobeaftereffects />, name: "Aftereffects", color: "#631fe3", level: 4 },
-    { icon: <SiSketchup />, name: "Sketchup", color: "#ff2d20", level: 4 },
-    { icon: <SiRhinoceros />, name: "Rhinoceros", color: "#fff", level: 3 },
-    { icon: <SiBlender />, name: "Blender", color: "#cd8001", level: 2 },
+    { icon: <SiAdobeaftereffects />, name: "Aftereffects", color: "#631fe3", level: 5 },
+    { icon: <SiSketchup />, name: "Sketchup", color: "#ff2d20", level: 5 },
+    { icon: <SiRhinoceros />, name: "Rhinoceros", color: "#fff", level: 5 },
+    { icon: <SiBlender />, name: "Blender", color: "#cd8001", level: 5 },
 
   ];
 
@@ -59,8 +61,8 @@ function App() {
               // Crear un enlace temporal
               const link = document.createElement('a');
               // Ruta a tu archivo (ajusta esto según tu estructura de archivos)
-              link.href = ''; 
-              link.download = './assets/Desarrollador_Hv.pdf'; // Nombre del archivo al descargar
+              link.href = "./public/Gabriel_Monhabell_hv.pdf";
+              link.download = 'Gabriel_Monhabell_HV.pdf'; // Nombre del archivo al descargar
               document.body.appendChild(link);
               link.click();
               document.body.removeChild(link);
