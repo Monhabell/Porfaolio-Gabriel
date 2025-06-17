@@ -1,7 +1,9 @@
 import "./App.css";
 import { motion } from "framer-motion";
 import { FaHtml5, FaPhp, FaLaravel, FaReact, FaPython, FaDatabase, FaGithub, FaCss3Alt, FaJs, FaNodeJs, FaTwitter, FaLinkedin, FaFileDownload } from "react-icons/fa";
-import { SiMongodb, SiBootstrap, SiBlender, SiAdobeaftereffects ,SiSketchup, SiRhinoceros,  SiAdobephotoshop, SiNextdotjs, SiTailwindcss, SiPostgresql, SiUnity, SiCoreldraw, SiAdobeillustrator} from "react-icons/si";
+import { SiMongodb, SiBootstrap, SiBlender, SiAdobeaftereffects, SiSketchup, SiRhinoceros, SiAdobephotoshop, SiNextdotjs, SiTailwindcss, SiPostgresql, SiUnity, SiCoreldraw, SiAdobeillustrator } from "react-icons/si";
+
+import { HiChartBar } from "react-icons/hi";
 
 import profilePic from "./assets/foto.png";
 import Projects from "./components/Projects";
@@ -26,6 +28,7 @@ function App() {
     { icon: <SiTailwindcss />, name: "Tailwind", color: "#38B2AC", level: 5 },
     { icon: <SiUnity />, name: "Unity", color: "#adaeb0", level: 5 },
     { icon: <FaGithub />, name: "GitHub", color: "#FFFFFF", level: 5 },
+    { icon: <HiChartBar />, name: "Power Bi", color: "#cd8001", level: 5 },
     { icon: <SiCoreldraw />, name: "CorelDRAW", color: "#47A247", level: 5 },
     { icon: <SiAdobeillustrator />, name: "Illustrator", color: "#cd8001", level: 5 },
     { icon: <SiAdobephotoshop />, name: "Photoshop", color: "#024ab3", level: 5 },
@@ -33,6 +36,7 @@ function App() {
     { icon: <SiSketchup />, name: "Sketchup", color: "#ff2d20", level: 5 },
     { icon: <SiRhinoceros />, name: "Rhinoceros", color: "#fff", level: 5 },
     { icon: <SiBlender />, name: "Blender", color: "#cd8001", level: 5 },
+
 
   ];
   return (
@@ -51,21 +55,22 @@ function App() {
           <motion.a whileHover={{ scale: 1.1 }} href="#contact">Contacto</motion.a>
         </nav>
         <motion.button
-            className="download-btn"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            onClick={() => {
-              // Crear un enlace temporal
-              const link = document.createElement('a');
-              // Ruta a tu archivo (ajusta esto según tu estructura de archivos)
-              link.href = "./public/Gabriel_Monhabell_hv.pdf";
-              link.download = 'Gabriel_Monhabell_HV.pdf'; // Nombre del archivo al descargar
-              document.body.appendChild(link);
-              link.click();
-              document.body.removeChild(link);
-            }}
-          >
-            <FaFileDownload /> Descargar HV
+          className="download-btn"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          onClick={() => {
+            // Crear un enlace temporal
+            const link = document.createElement('a');
+            // Ruta a tu archivo (ajusta esto según tu estructura de archivos)
+            link.href = "https://monhabell.github.io/Porfaolio-Gabriel/Gabriel_Monhabell_hv.pdf";
+
+            link.download = 'Gabriel_Monhabell_hv.pdf'; // Nombre del archivo al descargar
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+          }}
+        >
+          <FaFileDownload /> Descargar HV
         </motion.button>
 
       </motion.header>
@@ -175,7 +180,7 @@ function App() {
               <p>{skill.name}</p>
               <div className="skill-level">
                 {[...Array(5)].map((_, i) => (
-                  <div 
+                  <div
                     key={i}
                     className={`level-dot ${i < skill.level ? 'filled' : ''}`}
                     style={{ backgroundColor: i < skill.level ? skill.color : '#444' }}
