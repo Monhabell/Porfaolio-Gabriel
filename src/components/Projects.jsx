@@ -28,7 +28,6 @@ const Projects = () => {
       description: "Plataforma gestión de productividad, recepciones y reportes en el area Gesi de la subred. Desarrollado con Laravel para automatización.",
       technologies: ["Php", "Laravel", "MySQL", "Node.js", "CSS", "SCSS", "Blade"],
       image: trakio,
-      github: "#",
       demo: "https://www.trakio.pro/",
       featured: true
     },
@@ -39,7 +38,7 @@ const Projects = () => {
       technologies: ["Next.js", "Postgresql", "Tailwind CSS", "CSS", "Laravel"],
       image: ecom,
       github: "https://github.com/Monhabell/ToysNow",
-      // demo: "#",
+      demo: "www.toysnow.com.co",
       featured: false
     },
     {
