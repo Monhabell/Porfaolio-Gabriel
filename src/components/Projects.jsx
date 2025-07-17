@@ -26,7 +26,7 @@ const Projects = () => {
       id: 1,
       title: "Sistema de Gestión Trakio",
       description: "Plataforma gestión de productividad, recepciones y reportes en el area Gesi de la subred. Desarrollado con Laravel para automatización.",
-      technologies: ["Php", "Laravel", "MySQL", "Node.js", "CSS", "SCSS", "Blade"],
+      technologies: ["PHP", "Laravel", "MySQL", "Node.js", "CSS", "SCSS", "Blade"],
       image: trakio,
       demo: "https://www.trakio.pro/",
       featured: true
