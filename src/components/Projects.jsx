@@ -2,16 +2,16 @@ import React, { useState } from "react";
 import ReactDOM from 'react-dom/client';
 import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt, FaNode } from "react-icons/fa";
-import { SiReact, SiAdobeaftereffects, SiLaravel, SiHtml5, SiTailwindcss,  SiUnity, SiPython, SiPhp, SiJavascript, SiMysql, SiCss3, SiExpress, SiNextdotjs, SiPostgresql  } from "react-icons/si";
+import { SiReact, SiAdobeaftereffects, SiLaravel, SiHtml5, SiTailwindcss, SiUnity, SiPython, SiPhp, SiJavascript, SiMysql, SiCss3, SiExpress, SiNextdotjs, SiPostgresql } from "react-icons/si";
 import "./Projects.css"; // Asegúrate de tener un archivo CSS para estilos
 import trakio from "../assets/trakio.png"; // Asegúrate de tener la imagen en la ruta correcta
 import Odin from "../assets/odin.png"; // Asegúrate de tener la imagen en la ruta correcta
 import Injector from "../assets/trakio injector.png"; // Asegúrate de tener la imagen en la ruta correcta
-import ecom from "../assets/ecom.png"; 
-import Bot from "../assets/bot.png"; 
+import ecom from "../assets/ecom.png";
+import Bot from "../assets/bot.png";
 import Juego1 from "../assets/juego1.png";
-import Juego2 from "../assets/juego2.png"; 
-import videoAff from "../assets/video after.png"; 
+import Juego2 from "../assets/juego2.png";
+import videoAff from "../assets/video after.png";
 
 
 
@@ -26,7 +26,7 @@ const Projects = () => {
       id: 1,
       title: "Sistema de Gestión Trakio",
       description: "Plataforma gestión de productividad, recepciones y reportes en el area Gesi de la subred. Desarrollado con Laravel para automatización.",
-      technologies: ["Laravel", "MySQL", "Node.js", "CSS", "SCSS", "Blade"],
+      technologies: ["Php", "Laravel", "MySQL", "Node.js", "CSS", "SCSS", "Blade"],
       image: trakio,
       github: "#",
       demo: "https://www.trakio.pro/",
@@ -129,12 +129,12 @@ const Projects = () => {
 
   };
 
-  const filteredProjects = filter === "all" 
-    ? projects 
-    : projects.filter(project => 
-        project.technologies.some(tech => 
-          tech.toLowerCase().includes(filter.toLowerCase())
-        ));
+  const filteredProjects = filter === "all"
+    ? projects
+    : projects.filter(project =>
+      project.technologies.some(tech =>
+        tech.toLowerCase().includes(filter.toLowerCase())
+      ));
 
   return (
     <section id="projects" className="projects-section">
