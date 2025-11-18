@@ -8,6 +8,7 @@ import trakio from "../assets/trakio.png"; // Asegúrate de tener la imagen en l
 import Odin from "../assets/odin.png"; // Asegúrate de tener la imagen en la ruta correcta
 import Injector from "../assets/trakio injector.png"; // Asegúrate de tener la imagen en la ruta correcta
 import ecom from "../assets/ecom.png";
+import masBienestar from "../assets/masbienestar.png";
 import Bot from "../assets/bot.png";
 import Juego1 from "../assets/juego1.png";
 import Juego2 from "../assets/juego2.png";
@@ -31,18 +32,29 @@ const Projects = () => {
       demo: "https://www.trakio.pro/",
       featured: true
     },
+
     {
       id: 2,
-      title: "Ecommerce-ToysNow (Sitio en desarrollo)",
+      title: "Masbienestar",
+      description: "Plicativo web para gestion de cursos y modlos de enseñanza en linea para la Secretaria de Salud de Bogota.",
+      technologies: ["Next.js", "Msql", "Tailwind CSS", "CSS", "Laravel"],
+      image: masBienestar,
+      demo: "https://masbienestar.subrednorte.gov.co/",
+      featured: false
+    },
+
+    {
+      id: 3,
+      title: "Ecommerce-ToysNow",
       description: "E-commerce de juguetes con carrito de compras y gestión de productos  . ",
       technologies: ["Next.js", "Postgresql", "Tailwind CSS", "CSS", "Laravel"],
       image: ecom,
       github: "https://github.com/Monhabell/ToysNow",
-      demo: "www.toysnow.com.co",
+      demo: "https://www.toysnow.com.co",
       featured: false
     },
     {
-      id: 3,
+      id: 4,
       title: "Odin Automatización",
       description: "Sistema de automatizacion de registros y validación de datos en Excel.",
       technologies: ["Python", "Pandas"],
@@ -51,7 +63,7 @@ const Projects = () => {
       featured: false
     },
     {
-      id: 4,
+      id: 5,
       title: "Extensión de Navegador Trakio Injector",
       description: "Extensión para inyectar datos en formularios web",
       technologies: ["JavaScript"],
@@ -61,7 +73,7 @@ const Projects = () => {
       featured: false
     },
     {
-      id: 5,
+      id: 6,
       title: "Bot predictivo de Trading",
       description: "Bot de trading que utiliza IA para predecir movimientos del mercado y ejecutar operaciones.",
       technologies: ["Python", "Pandas", "Machine Learning", "Tkinter"],
@@ -71,7 +83,7 @@ const Projects = () => {
       featured: false
     },
     {
-      id: 6,
+      id: 7,
       title: "Juego Unity (en desarrollo)",
       description: "Creacion de juego con personaje interacciones con el medio y fisicas",
       technologies: ["Unity"],
@@ -81,7 +93,7 @@ const Projects = () => {
       featured: false
     },
     {
-      id: 7,
+      id: 8,
       title: "Juego Js",
       description: "Creacion de juego con personaje interacciones con el medio y fisicas",
       technologies: ["JavaScript", "CSS", "Html"],
@@ -92,7 +104,7 @@ const Projects = () => {
     }
     ,
     {
-      id: 8,
+      id: 9,
       title: "Video Aff",
       description: "Creacion de juego con personaje interacciones con el medio y fisicas",
       technologies: ["After effects"],

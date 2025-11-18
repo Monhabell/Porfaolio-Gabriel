@@ -197,39 +197,40 @@ function App() {
 
       {/* SOBRE MÍ */}
       <section id="about" className="about-section">
-        <div className="about-content">
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="about-text"
-          >
-            <h2>Sobre <span>Mí</span></h2>
-            <p><strong>¡Hola! Soy Gabriel Monhabell Acosta</strong>, un apasionado del <strong>diseño gráfico</strong> y la <strong>programación</strong> con más de 10 años de experiencia en el mundo de las artes gráficas y la tecnología.</p>
+        <div className="about-content">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="about-text"
+          >
+            <h2>Sobre <span>Mí</span></h2>
+            
+            <p><strong>¡Hola! Soy Gabriel Monhabell Acosta</strong>, un profesional con una trayectoria de 10 años que converge entre el <strong>diseño gráfico</strong> y el **desarrollo de software**, aplicando una visión única en la creación de soluciones tecnológicas.</p>
 
-            <p>Mi trayectoria comenzó en el diseño gráfico, donde me formé en la <strong>Corporación Iberoamericana de Estudios CIES</strong>, obteniendo también un título como <strong>técnico en sistemas</strong>. Durante una década, trabajé en el sector gráfico, evolucionando desde el diseño hasta el manejo de maquinaria especializada como impresión offset, tipografía, laminado, plotter y bordado.</p>
+            <p>Mi base formativa incluye un título como **Técnico en Sistemas** de la Corporación Iberoamericana de Estudios CIES. Mi experiencia inicial en diseño gráfico me proporcionó un **gran enfoque en la usabilidad y la estética** del producto final, esencial en el desarrollo frontend.</p>
 
-            <p>Con el tiempo, mi interés por la tecnología y la automatización me llevó a especializarme en <strong>programación y desarrollo de software</strong>. Estudié desarrollo web en <strong>Netx_U</strong> y, de manera autodidacta, perfeccioné mis habilidades en <strong>PHP, HTML, CSS, Laravel, React, Python y bases de datos MySQL</strong>.</p>
-          </motion.div>
+            <p>Mi carrera evolucionó hacia la **programación y la automatización**, centrándome en el desarrollo backend. Actualmente, cuento con **más de 4 años de experiencia específica** en el uso de **PHP** con el framework **Laravel**, profundizando mis habilidades en **React, Python y bases de datos relacionales como MySQL y PostgreSQL**.</p>
+          </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="about-more"
-          >
-            <p>Actualmente, estoy finalizando mi <strong>ingeniería en sistemas en la Universidad San Jose</strong> y trabajo en la <strong>Secretaría de Salud Subred Norte</strong>, donde me especializo en el manejo de bases de datos, automatización de procesos y desarrollo de herramientas que optimizan el control de archivos y validación de datos en <strong>Excel con Python</strong>.</p>
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="about-more"
+          >
+            <p>Actualmente, me encuentro finalizando mi **Ingeniería en Sistemas** y aplico mis conocimientos en la **Secretaría de Salud Subred Norte**, desarrollando herramientas que optimizan la gestión de datos, incluyendo la automatización de procesos con **Python** y el manejo avanzado de bases de datos.</p>
 
-            <p>Además, tengo formación en <strong>producción musical y DJ</strong>, habiéndome graduado de <strong>DNA Music</strong>, lo que me ha permitido combinar creatividad y tecnología en distintos ámbitos.</p>
+            <p>Soy un profesional que domina los **flujos de trabajo de desarrollo colaborativo (Git/GitHub)** y estoy familiarizado con las buenas prácticas de calidad como **TDD** (Desarrollo Guiado por Pruebas), **revisiones de código** y la creación de **API REST eficientes**. Cuento con el **Inglés (mínimo B1+)** </p>
 
-            <p><strong>Soy un profesional versátil</strong>, con una gran capacidad de aprendizaje y pasión por la innovación. Me encanta desarrollar soluciones tecnológicas que optimicen el trabajo y mejoren la calidad de los datos.</p>
+            <p>Mi gran capacidad de aprendizaje me permite desarrollar soluciones tecnológicas robustas que no solo funcionan, sino que son intuitivas y escalables.</p>
 
-            <p>Si buscas un diseñador con visión tecnológica o un desarrollador con sensibilidad artística, <strong>¡soy la combinación perfecta!</strong></p>
-          </motion.div>
-        </div>
-      </section>
+            <p>Si buscas un desarrollador backend con experiencia comprobada en Laravel y una sensibilidad única para el diseño y la experiencia de usuario, **¡soy la combinación perfecta!**</p>
+          </motion.div>
+        </div>
+      </section>
 
       {/* CONTACTO */}
       <section id="contact" className="contact-section">
