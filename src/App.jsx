@@ -9,8 +9,6 @@ import profilePic from "./assets/foto.png";
 import Projects from "./components/Projects";
 import Certificates from "./components/certificates";
 
-
-
 function App() {
   const skills = [
     { icon: <FaHtml5 />, name: "HTML5", color: "#E44D26", level: 5 },
