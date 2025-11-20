@@ -125,7 +125,7 @@ const Certificates = () => {
         },
         {
             id: 9,
-            title: "HTML5 desde Cero",
+            title: "HTML5",
             issuer: "Next U",
             technologies: ["HTML", "Front-end"],
             image: certhtml,
@@ -134,7 +134,7 @@ const Certificates = () => {
         },
         {
             id: 10,
-            title: "Introducción al Desarrollo Web",
+            title: "Desarrollo Web",
             issuer: "Next U",
             technologies: ["Web Development", "Front-end"],
             image: certintroduccionweb,
@@ -143,7 +143,7 @@ const Certificates = () => {
         },
         {
             id: 11,
-            title: "JavaScript para Principiantes",
+            title: "JavaScript",
             issuer: "Next U",
             technologies: ["JavaScript", "Front-end"],
             image: certjavascript,
