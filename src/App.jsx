@@ -7,6 +7,7 @@ import { HiChartBar } from "react-icons/hi";
 
 import profilePic from "./assets/foto.png";
 import Projects from "./components/Projects";
+import Certificates from "./components/certificates";
 
 
 
@@ -195,42 +196,44 @@ function App() {
       {/* PROYECTOS */}
       <Projects />
 
+      <Certificates />
+
       {/* SOBRE MÍ */}
       <section id="about" className="about-section">
-        <div className="about-content">
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="about-text"
-          >
-            <h2>Sobre <span>Mí</span></h2>
-            
-            <p><strong>¡Hola! Soy Gabriel Monhabell Acosta</strong>, un profesional con una trayectoria de 10 años que converge entre el <strong>diseño gráfico</strong> y el **desarrollo de software**, aplicando una visión única en la creación de soluciones tecnológicas.</p>
+        <div className="about-content">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="about-text"
+          >
+            <h2>Sobre <span>Mí</span></h2>
 
-            <p>Mi base formativa incluye un título como **Técnico en Sistemas** de la Corporación Iberoamericana de Estudios CIES. Mi experiencia inicial en diseño gráfico me proporcionó un **gran enfoque en la usabilidad y la estética** del producto final, esencial en el desarrollo frontend.</p>
+            <p><strong>¡Hola! Soy Gabriel Monhabell Acosta</strong>, un profesional con una trayectoria de 10 años que converge entre el <strong>diseño gráfico</strong> y el **desarrollo de software**, aplicando una visión única en la creación de soluciones tecnológicas.</p>
 
-            <p>Mi carrera evolucionó hacia la **programación y la automatización**, centrándome en el desarrollo backend. Actualmente, cuento con **más de 4 años de experiencia específica** en el uso de **PHP** con el framework **Laravel**, profundizando mis habilidades en **React, Python y bases de datos relacionales como MySQL y PostgreSQL**.</p>
-          </motion.div>
+            <p>Mi base formativa incluye un título como **Técnico en Sistemas** de la Corporación Iberoamericana de Estudios CIES. Mi experiencia inicial en diseño gráfico me proporcionó un **gran enfoque en la usabilidad y la estética** del producto final, esencial en el desarrollo frontend.</p>
 
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="about-more"
-          >
-            <p>Actualmente, me encuentro finalizando mi **Ingeniería en Sistemas** y aplico mis conocimientos en la **Secretaría de Salud Subred Norte**, desarrollando herramientas que optimizan la gestión de datos, incluyendo la automatización de procesos con **Python** y el manejo avanzado de bases de datos.</p>
+            <p>Mi carrera evolucionó hacia la **programación y la automatización**, centrándome en el desarrollo backend. Actualmente, cuento con **más de 4 años de experiencia específica** en el uso de **PHP** con el framework **Laravel**, profundizando mis habilidades en **React, Python y bases de datos relacionales como MySQL y PostgreSQL**.</p>
+          </motion.div>
 
-            <p>Soy un profesional que domina los **flujos de trabajo de desarrollo colaborativo (Git/GitHub)** y estoy familiarizado con las buenas prácticas de calidad como **TDD** (Desarrollo Guiado por Pruebas), **revisiones de código** y la creación de **API REST eficientes**. Cuento con el **Inglés (mínimo B1+)** </p>
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="about-more"
+          >
+            <p>Actualmente, me encuentro finalizando mi **Ingeniería en Sistemas** y aplico mis conocimientos en la **Secretaría de Salud Subred Norte**, desarrollando herramientas que optimizan la gestión de datos, incluyendo la automatización de procesos con **Python** y el manejo avanzado de bases de datos.</p>
 
-            <p>Mi gran capacidad de aprendizaje me permite desarrollar soluciones tecnológicas robustas que no solo funcionan, sino que son intuitivas y escalables.</p>
+            <p>Soy un profesional que domina los **flujos de trabajo de desarrollo colaborativo (Git/GitHub)** y estoy familiarizado con las buenas prácticas de calidad como **TDD** (Desarrollo Guiado por Pruebas), **revisiones de código** y la creación de **API REST eficientes**. Cuento con el **Inglés (mínimo B1+)** </p>
 
-            <p>Si buscas un desarrollador backend con experiencia comprobada en Laravel y una sensibilidad única para el diseño y la experiencia de usuario, **¡soy la combinación perfecta!**</p>
-          </motion.div>
-        </div>
-      </section>
+            <p>Mi gran capacidad de aprendizaje me permite desarrollar soluciones tecnológicas robustas que no solo funcionan, sino que son intuitivas y escalables.</p>
+
+            <p>Si buscas un desarrollador backend con experiencia comprobada en Laravel y una sensibilidad única para el diseño y la experiencia de usuario, **¡soy la combinación perfecta!**</p>
+          </motion.div>
+        </div>
+      </section>
 
       {/* CONTACTO */}
       <section id="contact" className="contact-section">

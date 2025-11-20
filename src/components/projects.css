@@ -4,7 +4,18 @@
   position: relative;
 }
 
+.certificates-section {
+  background-color: var(--secondary-color);
+  padding: 6rem 5%;
+  position: relative;
+}
+
 .projects-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.certificates-section .container {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -186,15 +197,16 @@
   .project-card.featured {
     grid-column: span 1;
   }
-  
-  .project-image, .project-card.featured .project-image {
+
+  .project-image,
+  .project-card.featured .project-image {
     height: 200px;
   }
-  
+
   .filter-buttons {
     gap: 0.5rem;
   }
-  
+
   .filter-buttons button {
     padding: 0.5rem 1rem;
     font-size: 0.8rem;
